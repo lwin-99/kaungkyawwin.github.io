@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kaung Kyaw Win (Kelvin) — Photographer & Visual Storyteller</title>
+  <meta name="description" content="Photographer & visual storyteller: street, portraits, events, landscapes, macro, university & community stories. Available for bookings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0c0e; --fg:#e7e9ee; --muted:#9aa3b2; --card:#111418; --chip:#1b2026; --accent:#7dd3fc; --accent2:#a78bfa; --link:#93c5fd; }
+    @media (prefers-color-scheme: light) { :root { --bg:#ffffff; --fg:#0b0c0e; --muted:#525c6a; --card:#f7f8fb; --chip:#eef2f7; --link:#2563eb; } }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+    .container { max-width: 1060px; margin: 0 auto; padding: 24px 20px 80px; }
+    header { display:flex; gap:22px; align-items:center; justify-content:space-between; }
+    nav a { text-decoration:none; color:var(--fg); margin: 0 10px; padding: 6px 10px; border-radius: 999px; }
+    nav a:hover { background: var(--chip); }
+    .hero { margin-top: 28px; background: linear-gradient(135deg, rgba(125,211,252,.15), rgba(167,139,250,.15)); border:1px solid rgba(128,128,128,.25); border-radius: 18px; padding: 28px; display:grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
+    .hero h1 { margin:0 0 6px; font-size: 34px; }
+    .hero .tag { color: var(--muted); font-weight: 500; }
+    .hero .cta { margin-top: 14px; display:flex; flex-wrap:wrap; gap: 10px; }
+    .btn { padding: 10px 14px; border-radius: 14px; text-decoration:none; font-weight:600; background: var(--card); color: var(--fg); border: 1px solid rgba(128,128,128,.25); }
+    .btn.primary { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #0b0c0e; border-color: transparent; }
+    section { margin-top: 34px; background: var(--card); border:1px solid rgba(128,128,128,.2); border-radius: 18px; padding: 22px; }
+    section h2 { margin: 0 0 12px; font-size: 22px; }
+    .grid-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .gallery { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-top: 8px; }
+    .thumb { width: 100%; height: 0; padding-bottom: 66%; border-radius: 12px; overflow: hidden; border:1px solid rgba(128,128,128,.2); background:#0f1216; display:block; }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; display:block; }
+    .sub { color:var(--muted); font-size: 14px; }
+    .contact a { color:var(--link); }
+    footer { margin-top: 28px; color:var(--muted); font-size: 13px; text-align:center; }
+    @media (max-width: 900px){ .hero{ grid-template-columns: 1fr; } .grid-3{ grid-template-columns: 1fr; } .gallery{ grid-template-columns: 1fr 1fr; } }
+    @media print { body{ background:#fff; color:#000 } section{ border:1px solid #ddd; break-inside: avoid; } a{ color:#000; text-decoration: underline; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kaung Kyaw Win",
+    "alternateName": "Kelvin",
+    "jobTitle": "Photographer & Visual Storyteller",
+    "knowsAbout": ["Street photography","Portraits","Events","Landscapes","Macro","University activities","Community stories"],
+    "email": "mailto:kaungkyawwin5@gmail.com",
+    "telephone": "+971503608875",
+    "url": ""
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="font-weight:700">KKW</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Kaung Kyaw Win (Kelvin)</h1>
+        <div class="tag">Photographer & Visual Storyteller</div>
+        <p>I capture authentic moments across street, portraits, events, landscapes, macro, and community stories. Available for local and international assignments.</p>
+        <div class="cta">
+          <a class="btn primary" href="./Portfolio.pdf" target="_blank" rel="noopener">Download Portfolio (PDF)</a>
+          <a class="btn" href="#gallery">View Gallery</a>
+          <a class="btn" href="#contact">Book a Shoot</a>
+        </div>
+        <p class="sub">Tip: Replace <code>Portfolio.pdf</code> if you upload a newer PDF.</p>
+      </div>
+      <div>
+        <a class="thumb" aria-label="Hero placeholder">
+          <img src="images/photo1.jpg" alt="Featured work" />
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Began shooting in 2016 and evolved from street diaries to multi-genre storytelling. Core approach: authenticity, empathy, and timing. Tools and style have grown, but the mission stays the same—images that speak without words.</p>
+    </section>
+
+    <section id="work">
+      <h2>Services</h2>
+      <div class="grid-3">
+        <div><h3>Street & Travel</h3><div class="sub">Candid storytelling from daily life and journeys.</div></div>
+        <div><h3>Portraits</h3><div class="sub">Honest, expressive portraits—studio or on-location.</div></div>
+        <div><h3>Events</h3><div class="sub">Weddings, proposals, and corporate events.</div></div>
+        <div><h3>Landscapes</h3><div class="sub">Natural environments & cityscapes.</div></div>
+        <div><h3>Macro</h3><div class="sub">Close-up details with precision.</div></div>
+        <div><h3>University & Community</h3><div class="sub">Campus life, donation activities, and social impact.</div></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <a class="thumb"><img src="images/photo1.jpg" alt="Work 1" /></a>
+        <a class="thumb"><img src="images/photo2.jpg" alt="Work 2" /></a>
+        <a class="thumb"><img src="images/photo3.jpg" alt="Work 3" /></a>
+        <a class="thumb"><img src="images/photo4.jpg" alt="Work 4" /></a>
+        <a class="thumb"><img src="images/photo5.jpg" alt="Work 5" /></a>
+        <a class="thumb"><img src="images/photo6.jpg" alt="Work 6" /></a>
+      </div>
+      <p class="sub">Replace these files with your images and keep the same names, or update the <code>src</code> paths.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Phone: <a href="tel:+971503608875">+971 503 608 875</a> · Email: <a href="mailto:kaungkyawwin5@gmail.com">kaungkyawwin5@gmail.com</a></p>
+      <p class="sub">Also reachable via WhatsApp/Telegram on the same number.</p>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Kaung Kyaw Win — All rights reserved.</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
