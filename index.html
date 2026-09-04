@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kaung Kyaw Win — Photographer & Visual Storyteller</title>
+<meta name="description" content="Kaung Kyaw Win (Kelvin) — photographer working across street, portraits, events, landscapes, macro, and community stories. Available for bookings." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kaung Kyaw Win",
+  "alternateName": "Kelvin",
+  "jobTitle": "Photographer & Visual Storyteller",
+  "knowsAbout": ["Street photography","Portraits","Events","Landscapes","Macro photography","Community stories"],
+  "email": "mailto:kaungkyawwin5@gmail.com",
+  "telephone": "+971503608875"
+}
+</script>
+<style>
+  :root{
+    --bg:#16130f;
+    --bg2:#1e1a14;
+    --fg:#ede7da;
+    --muted:#a99d89;
+    --accent:#c9793f;
+    --line:rgba(237,231,218,0.14);
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:var(--sans); line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  img{display:block; max-width:100%;}
+  a{color:inherit;}
+
+  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+
+  /* NAV */
+  header.site{
+    position:absolute; top:0; left:0; right:0; z-index:20;
+    padding:26px 0;
+  }
+  header.site .wrap{display:flex; align-items:center; justify-content:space-between;}
+  .brand{font-family:var(--serif); font-size:20px; letter-spacing:.02em;}
+  nav.primary a{
+    text-decoration:none; color:var(--fg); margin-left:26px; font-size:14px;
+    padding-bottom:3px; border-bottom:1px solid transparent;
+  }
+  nav.primary a:hover{border-color:var(--accent);}
+
+  /* HERO */
+  .hero{
+    position:relative; height:92vh; min-height:560px; overflow:hidden;
+    display:flex; align-items:flex-end;
+  }
+  .hero img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+    filter:grayscale(15%) contrast(1.05);
+  }
+  .hero::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(22,19,15,.15) 0%, rgba(22,19,15,.35) 45%, rgba(22,19,15,.96) 100%);
+  }
+  .hero-content{position:relative; z-index:2; padding:0 0 64px;}
+  .hero-content .kicker{
+    font-size:14px; color:var(--accent); margin:0 0 14px; font-weight:500;
+  }
+  .hero-content h1{
+    font-family:var(--serif); font-weight:400; font-size:clamp(40px,7vw,88px);
+    margin:0; line-height:1.02; max-width:14ch;
+  }
+  .hero-content p.tagline{
+    font-size:18px; color:var(--muted); max-width:46ch; margin:20px 0 30px;
+  }
+  .cta-row{display:flex; flex-wrap:wrap; gap:14px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:13px 22px; border-radius:2px; text-decoration:none;
+    font-size:14px; font-weight:500; border:1px solid var(--line);
+  }
+  .btn.primary{background:var(--accent); border-color:var(--accent); color:#181310;}
+  .btn.primary:hover{background:#dd8a4d;}
+  .btn.ghost{color:var(--fg);}
+  .btn.ghost:hover{border-color:var(--fg);}
+
+  /* SECTION SCAFFOLD */
+  section{padding:100px 0;}
+  section + section{border-top:1px solid var(--line);}
+  .section-head{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    gap:24px; margin-bottom:44px; flex-wrap:wrap;
+  }
+  .section-head h2{
+    font-family:var(--serif); font-weight:400; font-size:clamp(30px,4vw,46px); margin:0;
+  }
+  .section-head p{color:var(--muted); max-width:38ch; margin:0; font-size:15px;}
+  .num{color:var(--muted); font-size:14px; font-variant-numeric:tabular-nums;}
+
+  /* ABOUT */
+  #about .wrap{display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:center;}
+  .about-portrait{position:relative;}
+  .about-portrait img{
+    width:100%; aspect-ratio:4/5; object-fit:cover; filter:grayscale(35%);
+  }
+  .about-portrait .frame-tag{
+    position:absolute; bottom:-16px; left:-16px; background:var(--bg);
+    border:1px solid var(--line); padding:10px 16px; font-size:13px; color:var(--muted);
+  }
+  .about-copy p{font-size:17px; color:#dcd5c6; max-width:56ch;}
+  .about-copy p:first-of-type{
+    font-family:var(--serif); font-size:24px; line-height:1.45; color:var(--fg);
+  }
+  .stat-row{display:flex; gap:40px; margin-top:36px; padding-top:28px; border-top:1px solid var(--line);}
+  .stat b{display:block; font-family:var(--serif); font-size:32px; font-weight:400; color:var(--accent);}
+  .stat span{font-size:13px; color:var(--muted);}
+
+  /* GALLERIES - shared */
+  .g{display:grid; gap:14px;}
+  figure{margin:0; position:relative; overflow:hidden; background:var(--bg2);}
+  figure img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+  figure:hover img{transform:scale(1.035);}
+
+  /* Street: asymmetric mosaic */
+  #street .g{
+    grid-template-columns:repeat(6, 1fr);
+    grid-auto-rows:130px;
+  }
+  #street .g figure:nth-child(1){grid-column:span 3; grid-row:span 3;}
+  #street .g figure:nth-child(2){grid-column:span 3; grid-row:span 2;}
+  #street .g figure:nth-child(3){grid-column:span 3; grid-row:span 2;}
+  #street .g figure:nth-child(4){grid-column:span 2; grid-row:span 2;}
+  #street .g figure:nth-child(5){grid-column:span 4; grid-row:span 2;}
+
+  /* Landscapes: filmstrip */
+  #landscapes .g{grid-template-columns:repeat(5,1fr); grid-auto-rows:210px;}
+
+  /* Portraits: generous 2x2 */
+  #portraits .wrap{display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:start;}
+  #portraits .g{grid-template-columns:1fr 1fr; grid-auto-rows:260px;}
+  #portraits .g figure:nth-child(1){grid-row:span 2;}
+  #portraits .copy p{font-size:16px; color:#dcd5c6;}
+
+  /* Macro: specimen row */
+  #macro .g{grid-template-columns:repeat(5,1fr); grid-auto-rows:1fr;}
+  #macro figure{aspect-ratio:1/1; border:1px solid var(--line);}
+
+  /* Community: uni + donation combined */
+  #community .g{grid-template-columns:repeat(4,1fr); grid-auto-rows:190px;}
+
+  /* Occasions: proposals + events, alternating spotlight rows */
+  .spotlight{display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); margin-bottom:14px;}
+  .spotlight img{width:100%; height:340px; object-fit:cover;}
+  .spotlight .txt{padding:40px; display:flex; flex-direction:column; justify-content:center; background:var(--bg2);}
+  .spotlight .txt .tag{color:var(--accent); font-size:13px; margin-bottom:10px;}
+  .spotlight .txt h3{font-family:var(--serif); font-weight:400; font-size:26px; margin:0 0 12px;}
+  .spotlight .txt p{color:var(--muted); font-size:15px; margin:0; max-width:38ch;}
+  .spotlight.reverse{grid-template-columns:1fr 1fr;}
+  .spotlight.reverse img{order:2;}
+  .spotlight.reverse .txt{order:1;}
+
+  /* Behind the scenes strip */
+  #process .g{grid-template-columns:repeat(4,1fr); grid-auto-rows:170px; opacity:.92;}
+  #process figure img{filter:grayscale(55%);}
+
+  /* CONTACT */
+  #contact{background:var(--bg2);}
+  #contact .wrap{text-align:center;}
+  #contact .eyebrow{color:var(--accent); font-size:14px; margin-bottom:18px;}
+  #contact h2{
+    font-family:var(--serif); font-weight:400; font-size:clamp(34px,6vw,64px);
+    margin:0 0 30px; max-width:16ch; margin-left:auto; margin-right:auto;
+  }
+  .contact-links{display:flex; justify-content:center; gap:36px; flex-wrap:wrap; margin-top:10px;}
+  .contact-links a{
+    font-family:var(--serif); font-size:22px; text-decoration:none; border-bottom:1px solid var(--line);
+    padding-bottom:4px;
+  }
+  .contact-links a:hover{border-color:var(--accent); color:var(--accent);}
+
+  footer{padding:30px 0; text-align:center; color:var(--muted); font-size:13px;}
+
+  @media (max-width:860px){
+    #about .wrap, #portraits .wrap{grid-template-columns:1fr;}
+    .about-portrait{max-width:320px;}
+    #street .g, #landscapes .g, #macro .g, #community .g, #process .g{
+      grid-template-columns:repeat(2,1fr); grid-auto-rows:180px;
+    }
+    #street .g figure, #landscapes .g figure, #macro .g figure, #community .g figure, #process .g figure{
+      grid-column:span 1 !important; grid-row:span 1 !important;
+    }
+    .spotlight, .spotlight.reverse{grid-template-columns:1fr;}
+    .spotlight img{order:1 !important; height:260px;}
+    .spotlight .txt{order:2 !important; padding:28px;}
+    nav.primary{display:none;}
+    .stat-row{flex-wrap:wrap; row-gap:20px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">Kelvin<span style="color:var(--accent)">.</span></div>
+    <nav class="primary">
+      <a href="#about">About</a>
+      <a href="#street">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="images/hero-camera.jpg" alt="Kaung Kyaw Win holding a camera" />
+  <div class="wrap hero-content">
+    <p class="kicker">Photographer &amp; Visual Storyteller — based in the UAE</p>
+    <h1>Kaung Kyaw Win</h1>
+    <p class="tagline">Ten years documenting streets, faces, and unrepeatable moments — one honest frame at a time.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#contact">Book a shoot</a>
+      <a class="btn ghost" href="#street">See the work</a>
+      <a class="btn ghost" href="Portfolio.pdf" target="_blank" rel="noopener">Full portfolio (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-portrait">
+      <img src="images/profile-kelvin.jpg" alt="Portrait of Kaung Kyaw Win" />
+      <div class="frame-tag">Shooting since 2016 — Fujifilm X‑T5</div>
+    </div>
+    <div class="about-copy">
+      <p>What began in 2016 with a Samsung A5 and a habit of noticing has grown into a decade-long study of ordinary life.</p>
+      <p>The streets were the first classroom — daily rhythms, fleeting expressions, the spirit of people who didn't know they were being seen. That period shaped an approach built on patience and timing rather than staging.</p>
+      <p>Since moving to the Fujifilm X‑T5, the work has widened into portraits, events, landscapes, macro detail, and community stories, but the intent hasn't changed: photographs that hold something true, without needing a caption to explain it.</p>
+      <div class="stat-row">
+        <div class="stat"><b>2016</b><span>First frame</span></div>
+        <div class="stat"><b>6+</b><span>Genres covered</span></div>
+        <div class="stat"><b>UAE</b><span>Based, travels for work</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="street">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num">01 — Street</span>
+        <h2>Street &amp; travel</h2>
+      </div>
+      <p>Unposed moments from cities and daily life — timing over staging.</p>
+    </div>
+    <div class="g">
+      <figure><img src="images/street-1.jpg" alt="Silhouetted figure caught in a spotlight, street photography"></figure>
+      <figure><img src="images/street-2.jpg" alt="Dubai skyline in black and white"></figure>
+      <figure><img src="images/street-3.jpg" alt="Overhead shadow play in a parking lot"></figure>
+      <figure><img src="images/street-4.jpg" alt="Silhouette walking down a corridor"></figure>
+      <figure><img src="images/street-5.jpg" alt="Staircase inside a glass building"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="landscapes">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num">02 — Landscapes</span>
+        <h2>Landscapes &amp; light</h2>
+      </div>
+      <p>Skies, water, and skylines shot for their mood as much as their geography.</p>
+    </div>
+    <div class="g">
+      <figure><img src="images/landscape-1.jpg" alt="Shipwreck at sunset"></figure>
+      <figure><img src="images/landscape-2.jpg" alt="Construction pillars against a burning orange sky"></figure>
+      <figure><img src="images/landscape-3.jpg" alt="Silhouetted tree reflected in still water at sunset"></figure>
+      <figure><img src="images/landscape-4.jpg" alt="Deep red sun setting over open water"></figure>
+      <figure><img src="images/landscape-5.jpg" alt="Lightning strike behind a telecom tower"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="portraits">
+  <div class="wrap">
+    <div class="g">
+      <figure><img src="images/portrait-1.jpg" alt="Bride in traditional gold dress"></figure>
+      <figure><img src="images/portrait-2.jpg" alt="Graduate in cap and gown portrait"></figure>
+      <figure><img src="images/portrait-3.jpg" alt="Black and white portrait against a carved wooden door"></figure>
+      <figure><img src="images/portrait-4.jpg" alt="Portrait lit by window light"></figure>
+    </div>
+    <div class="copy">
+      <span class="num">03 — Portraits</span>
+      <h2 style="font-family:var(--serif); font-weight:400; font-size:38px; margin:10px 0 18px;">Portraits</h2>
+      <p>Studio or on-location, the aim is the same: expressions people recognise as their own, not a performance for the camera. Graduations, brides, and quiet in-between moments all get the same attention.</p>
+    </div>
+  </div>
+</section>
+
+<section id="macro">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num">04 — Macro</span>
+        <h2>Macro</h2>
+      </div>
+      <p>The small things, held still long enough to look at properly.</p>
+    </div>
+    <div class="g">
+      <figure><img src="images/macro-1.jpg" alt="Close-up of roasted coffee beans"></figure>
+      <figure><img src="images/macro-2.jpg" alt="Macro shot of a mosquito"></figure>
+      <figure><img src="images/macro-3.jpg" alt="Water droplet frozen mid-splash"></figure>
+      <figure><img src="images/macro-4.jpg" alt="Jumping spider close-up"></figure>
+      <figure><img src="images/macro-5.jpg" alt="Fly resting on a green leaf"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num">05 — Community</span>
+        <h2>University &amp; community</h2>
+      </div>
+      <p>Campus milestones and grassroots donation drives — documented as they happened.</p>
+    </div>
+    <div class="g">
+      <figure><img src="images/uni-1.jpg" alt="MBA welcome event at university"></figure>
+      <figure><img src="images/uni-2.jpg" alt="Candle lighting ceremony at university event"></figure>
+      <figure><img src="images/uni-3.jpg" alt="Graduation ceremony on stage"></figure>
+      <figure><img src="images/donation-1.jpg" alt="Volunteers handing out donations from a bus"></figure>
+      <figure><img src="images/donation-2.jpg" alt="Group photo during a community donation drive"></figure>
+      <figure><img src="images/uni-4.jpg" alt="Confetti falling during a university celebration"></figure>
+      <figure><img src="images/donation-3.jpg" alt="Black and white photo of a donation activity"></figure>
+      <figure><img src="images/donation-4.jpg" alt="Local family receiving donated goods"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="occasions">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num">06 — Occasions</span>
+        <h2>Proposals &amp; events</h2>
+      </div>
+      <p>The moments people hire a photographer to never lose.</p>
+    </div>
+
+    <div class="spotlight">
+      <img src="images/proposal-3.jpg" alt="Man holding a bouquet of roses before a proposal">
+      <div class="txt">
+        <span class="tag">Marriage proposals</span>
+        <h3>Built around one unrepeatable second</h3>
+        <p>Positioned early, shooting quietly, so the reaction on camera is the real one.</p>
+      </div>
+    </div>
+
+    <div class="spotlight reverse">
+      <img src="images/event-1.jpg" alt="Stage lighting at a beauty industry event">
+      <div class="txt">
+        <span class="tag">Corporate &amp; live events</span>
+        <h3>Coverage that keeps pace with the room</h3>
+        <p>From backstage prep to the main stage — for brands including MADI International.</p>
+      </div>
+    </div>
+
+    <div class="g" style="grid-template-columns:repeat(4,1fr); grid-auto-rows:190px; margin-top:14px;">
+      <figure><img src="images/proposal-1.jpg" alt="Engagement ring in a velvet box"></figure>
+      <figure><img src="images/proposal-2.jpg" alt="Silhouetted couple embracing"></figure>
+      <figure><img src="images/event-2.jpg" alt="Backstage moment before a fashion event"></figure>
+      <figure><img src="images/event-3.jpg" alt="Two presenters speaking into microphones at an event"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num">07 — Behind the scenes</span>
+        <h2>Work in progress</h2>
+      </div>
+      <p>On-site documentation of builds and installations, craftsmanship included.</p>
+    </div>
+    <div class="g">
+      <figure><img src="images/wip-1.jpg" alt="Worker finishing a rust-toned feature wall"></figure>
+      <figure><img src="images/wip-2.jpg" alt="Landscaped garden lit at night"></figure>
+      <figure><img src="images/wip-3.jpg" alt="Worker on a staircase carrying materials"></figure>
+      <figure><img src="images/wip-4.jpg" alt="Staircase under construction"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Available for bookings</p>
+    <h2>Have a moment worth keeping? Let's talk.</h2>
+    <div class="contact-links">
+      <a href="tel:+971503608875">+971 50 360 8875</a>
+      <a href="mailto:kaungkyawwin5@gmail.com">kaungkyawwin5@gmail.com</a>
+    </div>
+    <p style="color:var(--muted); font-size:14px; margin-top:22px;">Also reachable on WhatsApp and Telegram at the same number.</p>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Kaung Kyaw Win. All rights reserved.</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
