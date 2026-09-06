@@ -187,12 +187,12 @@
   footer{padding:30px 0; text-align:center; color:var(--muted); font-size:13px;}
 
   @media (max-width:860px){
-    #about .wrap, #portraits .wrap{grid-template-columns:1fr;}
+  #about .wrap, #portraits .wrap{grid-template-columns:1fr;}
     .about-portrait{max-width:320px;}
-    #street .g, #landscapes .g, #macro .g, #community .g, #process .g{
+    #street .g, #landscapes .g, #macro .g, #community .g, #process .g, #reels .g{
       grid-template-columns:repeat(2,1fr); grid-auto-rows:180px;
     }
-    #street .g figure, #landscapes .g figure, #macro .g figure, #community .g figure, #process .g figure{
+    #street .g figure, #landscapes .g figure, #macro .g figure, #community .g figure, #process .g figure, #reels .g figure{
       grid-column:span 1 !important; grid-row:span 1 !important;
     }
     .spotlight, .spotlight.reverse{grid-template-columns:1fr;}
@@ -211,6 +211,7 @@
     <nav class="primary">
       <a href="#about">About</a>
       <a href="#street">Work</a>
+      <a href="#reels">Reels</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
