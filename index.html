@@ -187,19 +187,41 @@
   footer{padding:30px 0; text-align:center; color:var(--muted); font-size:13px;}
 
   @media (max-width:860px){
-    #about .wrap, #portraits .wrap{grid-template-columns:1fr;}
+ #about .wrap, #portraits .wrap{grid-template-columns:1fr;}
     .about-portrait{max-width:320px;}
-    #street .g, #landscapes .g, #macro .g, #community .g, #process .g{
+    #street .g, #landscapes .g, #macro .g, #community .g, #process .g, #reels .g{
       grid-template-columns:repeat(2,1fr); grid-auto-rows:180px;
     }
-    #street .g figure, #landscapes .g figure, #macro .g figure, #community .g figure, #process .g figure{
+    #street .g figure, #landscapes .g figure, #macro .g figure, #community .g figure, #process .g figure, #reels .g figure{
       grid-column:span 1 !important; grid-row:span 1 !important;
+    }
+    #portraits .g{
+  grid-template-columns:1fr;
+  grid-auto-rows:auto;
+}
+#portraits .g figure{
+  aspect-ratio:auto;
+  height:auto;
+}
+#portraits .g figure:nth-child(1){
+  grid-row:auto;
+}
+#portraits .g img{
+  height:auto;
+  object-fit:contain;
+}
     }
     .spotlight, .spotlight.reverse{grid-template-columns:1fr;}
     .spotlight img{order:1 !important; height:260px;}
     .spotlight .txt{order:2 !important; padding:28px;}
     nav.primary{display:none;}
-    .stat-row{flex-wrap:wrap; row-gap:20px;}
+       .stat-row{flex-wrap:wrap; row-gap:20px;}
+    .hero::after{
+      background:linear-gradient(180deg, rgba(22,19,15,.45) 0%, rgba(22,19,15,.7) 40%, rgba(22,19,15,.97) 100%);
+    }
+    .hero-content{padding-left:20px;}
+    .hero-content h1{font-size:52px; line-height:1.05;}
+    .hero-content p.tagline{font-size:20px; line-height:1.6; max-width:90%;}
   }
 </style>
 </head>
@@ -211,6 +233,7 @@
     <nav class="primary">
       <a href="#about">About</a>
       <a href="#street">Work</a>
+      <a href="#reels">Reels</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -225,6 +248,7 @@
     <div class="cta-row">
       <a class="btn primary" href="#contact">Book a shoot</a>
       <a class="btn ghost" href="#street">See the work</a>
+       <a class="btn ghost" href="#reels">Reels</a>
       <a class="btn ghost" href="Mr. KaungKyawWin_Photographer_Portfolio.pdf" target="_blank" rel="noopener">Full portfolio (PDF)</a>
     </div>
   </div>
@@ -238,7 +262,7 @@
     </div>
     <div class="about-copy">
       <p>What began in 2016 with a Samsung A5 and a habit of noticing has grown into a decade-long study of ordinary life.</p>
-      <p>The streets were the first classroom — daily rhythms, fleeting expressions, the spirit of people who didn't know they were being seen. That period shaped an approach built on patience and timing rather than staging.</p>
+      <p>The streets were the first classroom daily rhythms, fleeting expressions, the spirit of people who didn't know they were being seen. That period shaped an approach built on patience and timing rather than staging.</p>
       <p>Since moving to the Fujifilm X‑T5, the work has widened into portraits, events, landscapes, macro detail, and community stories, but the intent hasn't changed: photographs that hold something true, without needing a caption to explain it.</p>
       <div class="stat-row">
         <div class="stat"><b>2016</b><span>First frame</span></div>
@@ -410,12 +434,12 @@
     <div class="g" style="grid-template-columns:repeat(5,1fr);">
       <figure style="aspect-ratio:9/16;">
         <video controls preload="metadata" style="width:100%;height:100%;object-fit:cover;">
-          <source src="videos/bebax-coffee-1.mp4" type="video/mp4">
+          <source src="videos/Bebax%20Coffee%201.mp4" type="video/mp4">
         </video>
       </figure>
       <figure style="aspect-ratio:9/16;">
         <video controls preload="metadata" style="width:100%;height:100%;object-fit:cover;">
-          <source src="videos/bebax-coffee-2.mp4" type="video/mp4">
+          <source src="videos/Bebax%20Coffee%202.mp4" type="video/mp4">
         </video>
       </figure>
       <figure style="aspect-ratio:9/16;">
@@ -425,12 +449,12 @@
       </figure>
       <figure style="aspect-ratio:9/16;">
         <video controls preload="metadata" style="width:100%;height:100%;object-fit:cover;">
-          <source src="videos/emporio-armani.mp4" type="video/mp4">
+          <source src="videos/Emporio%20Armani.mp4" type="video/mp4">
         </video>
       </figure>
       <figure style="aspect-ratio:9/16;">
         <video controls preload="metadata" style="width:100%;height:100%;object-fit:cover;">
-          <source src="videos/frankenstein-vs-santa.mp4" type="video/mp4">
+           <source src="videos/Frankanstein%20Vs%20San%20Marco.mp4" type="video/mp4">
         </video>
       </figure>
     </div>
